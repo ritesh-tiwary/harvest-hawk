@@ -1,4 +1,12 @@
 # Harvest Hawk
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/ritesh-tiwary/harvest-hawk.svg?style=social)](https://github.com/ritesh-tiwary/harvest-hawk/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/ritesh-tiwary/harvest-hawk.svg?style=social)](https://github.com/ritesh-tiwary/harvest-hawk/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/ritesh-tiwary/harvest-hawk.svg)](https://github.com/ritesh-tiwary/harvest-hawk/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/ritesh-tiwary/harvest-hawk.svg)](https://github.com/ritesh-tiwary/harvest-hawk/pulls)
+[![Contributors](https://img.shields.io/github/contributors/ritesh-tiwary/harvest-hawk.svg)](https://github.com/ritesh-tiwary/harvest-hawk/graphs/contributors)
+[![Twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fritesh-tiwary%2Fharvest-hawk)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fritesh-tiwary%2Fharvest-hawk)
+
 
 **Harvest Hawk** is a powerful, scalable web scraping application built with Scrapy and Scrapy-Splash to tackle JavaScript-rendered pages. Initially developed to scrape quotes from JavaScript-enabled sites, this project is evolving into a versatile tool capable of configuring and extracting data from any URL. Its modular design and robust Docker integration make it adaptable for diverse web data harvesting needs.
 
