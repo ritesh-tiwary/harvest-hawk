@@ -1,10 +1,11 @@
 import scrapy
+from settings import Settings
 from scrapy_splash import SplashRequest
 
 
 class QuotesSpider(scrapy.Spider):
     name = "quotes"
-    start_urls = ["http://quotes.toscrape.com/page/1/", "http://quotes.toscrape.com/page/2/"]
+    start_urls = Settings().urls
 
     def start_requests(self):
         for url in self.start_urls:
