@@ -65,7 +65,12 @@ Ensure you have the following installed:
    docker-compose up -d splash
    ```
 
-2. Run the Scrapy spider to scrape quotes:
+2. Navigate to the project folder
+   ```bash
+   cd harvest_hawk_scraper
+   ```
+
+3. Run the Scrapy spider to scrape quotes:
    ```bash
    scrapy crawl quotes -o output/quotes.json
    ```

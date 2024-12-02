@@ -1,0 +1,14 @@
+services:
+  splash:
+    image: scrapinghub/splash
+    container_name: splash
+    ports:
+      - "8050:8050"
+    environment:
+      - SPLASH_DEBUG=1
+    restart: unless-stopped
+    volumes:
+      - splash-logs:/workspaces/splash
+
+volumes:
+  splash-logs: {}

@@ -105,6 +105,11 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
 }
 
+# Enable Splash as the JavaScript-heavy pages handler
+SPIDER_MIDDLEWARES = {
+    'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+}
+
 # Enable Splash's deduplication filter
 DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 
