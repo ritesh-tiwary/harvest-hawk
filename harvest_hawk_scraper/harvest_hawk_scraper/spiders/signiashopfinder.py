@@ -11,7 +11,7 @@ class SigniashopfinderSpider(scrapy.Spider):
         data = json.loads(response.body)
         for shop in data:
             yield {
-                'title': shop.get('title', ''),
+                'name': shop.get('title', ''),
                 'address': shop.get('addressLine1', ''),
                 'state': shop.get('state', ''),
                 'country': shop.get('country', ''),
