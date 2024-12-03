@@ -7,6 +7,9 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
+from datetime import date
+
+
 BOT_NAME = "harvest_hawk_scraper"
 
 SPIDER_MODULES = ["harvest_hawk_scraper.spiders"]
@@ -91,6 +94,12 @@ DOWNLOAD_DELAY = 3
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+FEEDS = {
+    f"output/%(name)s_{date.today().strftime("%d%m%Y")}.csv": {
+        "format": "csv",
+        "overwrite": True
+    }
+}
 
 
 ## SPLASH CONFIGURATION
